@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/style/App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <div className="relative flex h-screen w-screen justify-center items-center">
+    <div className='flex absolute h-52 w-52 bg-yellow-400/25 rounded-full  '></div>
+    <div className="flex justify-center items-center backdrop-blur-xl border shadow relative h-80 w-80">
+      <h1>Web3 Dapp</h1>
     </div>
+   </div>
   );
 }
 
