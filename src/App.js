@@ -1,13 +1,15 @@
-import './assets/style/App.css';
+import React from "react";
+import Footer from "./component/Footer";
+import Navebar from "./component/Navbar";
+import Home from "./Home";
 
 function App() {
   return (
-   <div className="relative flex h-screen w-screen justify-center items-center">
-    <div className='flex absolute h-52 w-52 bg-yellow-400/25 rounded-full  '></div>
-    <div className="flex justify-center items-center backdrop-blur-xl border shadow relative h-80 w-80">
-      <h1>Web3 Dapp</h1>
+    <div className="w-screen h-screen text-black dark:text-white flex flex-col bg-[#ECF2FF] dark:bg-[#0f172a]">
+      <Navebar />
+      <Home />
+      <Footer />
     </div>
-   </div>
   );
 }
 

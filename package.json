@@ -1,5 +1,5 @@
 {
-  "name": "base_dapp",
+  "name": "tailwind-dark-mode",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,6 +36,8 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.2.7"
+    "autoprefixer": "^10.4.11",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   }
 }
