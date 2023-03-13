@@ -18,8 +18,10 @@ const projectId = "f4d2984143cf717cb0228a57db55a520";
 const { provider } = configureChains(chains, [w3mProvider({ projectId })]);
 const wagmiClient = createClient({
   autoConnect: true,
+  themeMode: 'dark' | 'light',
   connectors: w3mConnectors({ projectId, version: 1, chains }),
   provider,
+  
 });
 const ethereumClient = new EthereumClient(wagmiClient, chains);
 
@@ -31,6 +33,11 @@ root.render(
       <App />
     </WagmiConfig>
     <Web3Modal
+    themeVariables={{
+      '--w3m-font-family': 'Roboto, sans-serif',
+      '--w3m-accent-color': '#65d4ab',
+      '--w3m-background-color':'#65d4ab'
+    }}
       projectId={"f4d2984143cf717cb0228a57db55a520"}
       ethereumClient={ethereumClient}
     />
