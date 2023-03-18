@@ -4,12 +4,16 @@ function ThemeSwitch() {
   const [theme, setTheme] = useState(null);
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme) {
+      setTheme(storedTheme);
+    } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
       setTheme("dark");
     } else {
       setTheme("light");
     }
   }, []);
+  
 
   useEffect(() => {
     if (theme === "dark") {
@@ -20,8 +24,11 @@ function ThemeSwitch() {
   }, [theme]);
 
   const handleThemeSwitch = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
   };
+  
 
   return (
     <div>

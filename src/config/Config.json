@@ -1,0 +1,13 @@
+{
+  "CONTRACT_ADDRESS": "0x8054b9389AfD612d31512CEa21ff55Bda34bc8Fa",
+  "SCAN_LINK": "https://mumbai.polygonscan.com/address/0x8054b9389AfD612d31512CEa21ff55Bda34bc8Fa",
+  "NFT_NAME": "Test ButtPix",
+  "SYMBOL": "TBP",
+  "MAX_SUPPLY": 1000,
+  "WEI_COST": 75000000000000000,
+  "DISPLAY_COST": "0.075 Matic",
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/test2-73",
+  "SHOW_BACKGROUND": true
+}

@@ -10,9 +10,9 @@ import {
 } from "@web3modal/ethereum";
 import { Web3Modal } from "@web3modal/react";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
-import {  polygon } from "wagmi/chains";
+import {  polygonMumbai } from "wagmi/chains";
 
-const chains = [polygon];
+const chains = [polygonMumbai];
 const projectId = "f4d2984143cf717cb0228a57db55a520";
 
 const { provider } = configureChains(chains, [w3mProvider({ projectId })]);
@@ -34,9 +34,11 @@ root.render(
     </WagmiConfig>
     <Web3Modal
     themeVariables={{
-      '--w3m-font-family': 'Roboto, sans-serif',
-      '--w3m-accent-color': '#65d4ab',
-      '--w3m-background-color':'#65d4ab'
+      '--w3m-font-family': 'Mono, sans-serif',
+      '--w3m-accent-color': '#19A7CE',
+      '--w3m-background-color':'#00ffcc',
+      '--w3m-accent-fill-color':'#ffff',
+      
     }}
       projectId={"f4d2984143cf717cb0228a57db55a520"}
       ethereumClient={ethereumClient}
